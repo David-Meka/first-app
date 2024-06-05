@@ -1,7 +1,7 @@
 //home.dart
 import 'package:flutter/material.dart';
 
-//using the statefull widget
+//using the stateful widget
 class Home extends StatefulWidget {
   const Home({super.key});
 
@@ -14,7 +14,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           'Widget Tree',
           style: TextStyle(color: Colors.white),
         ),
@@ -23,7 +23,7 @@ class _HomeState extends State<Home> {
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
-            padding: EdgeInsets.all(16.0),
+            padding: const EdgeInsets.all(16.0),
             child: Column(
               children: <Widget>[
                 Row(
@@ -33,7 +33,7 @@ class _HomeState extends State<Home> {
                       height: 40.0,
                       width: 40.0,
                     ),
-                    Padding(
+                    const Padding(
                       padding: EdgeInsets.all(16.0),
                     ),
                     Expanded(
@@ -43,7 +43,7 @@ class _HomeState extends State<Home> {
                         width: 40.0,
                       ),
                     ),
-                    Padding(
+                    const Padding(
                       padding: EdgeInsets.all(16.0),
                     ),
                     Container(
@@ -53,7 +53,7 @@ class _HomeState extends State<Home> {
                     ),
                   ],
                 ),
-                Padding(
+                const Padding(
                   padding: EdgeInsets.all(16.0),
                 ),
                 Row(
@@ -67,7 +67,7 @@ class _HomeState extends State<Home> {
                           height: 60.0,
                           width: 60.0,
                         ),
-                        Padding(
+                        const Padding(
                           padding: EdgeInsets.all(16.0),
                         ),
                         Container(
@@ -75,7 +75,7 @@ class _HomeState extends State<Home> {
                           height: 40.0,
                           width: 40.0,
                         ),
-                        Padding(
+                        const Padding(
                           padding: EdgeInsets.all(16.0),
                         ),
                         Container(
@@ -83,7 +83,7 @@ class _HomeState extends State<Home> {
                           height: 20.0,
                           width: 20.0,
                         ),
-                        Divider(),
+                        const Divider(),
                         Row(
                           children: <Widget>[
                             CircleAvatar(
@@ -111,8 +111,8 @@ class _HomeState extends State<Home> {
                             ),
                           ],
                         ),
-                        Divider(),
-                        Text('End of the Line'),
+                        const Divider(),
+                        const Text('End of the Line'),
                       ],
                     ),
                   ],

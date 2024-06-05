@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 class settings extends StatelessWidget {
@@ -6,15 +8,25 @@ class settings extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        drawer: Drawer(
-          backgroundColor: Color.fromARGB(255, 224, 224, 224),
+      backgroundColor: Color.fromARGB(255, 26, 4, 4),
+      drawer: Drawer(
+        backgroundColor: Color.fromARGB(255, 224, 224, 224),
+      ),
+      appBar: AppBar(
+        backgroundColor: Color.fromARGB(255, 26, 4, 4),
+        title: Text(
+          'Settings',
+          style: TextStyle(color: Colors.white),
         ),
-        appBar: AppBar(
-          title: Text('Settings'),
-          centerTitle: true,
+        centerTitle: true,
+        iconTheme: IconThemeData(color: Color.fromARGB(255, 255, 255, 255)),
+      ),
+      body: Center(
+        child: Text(
+          'Settings page',
+          style: TextStyle(color: Colors.white),
         ),
-        body: Center(
-          child: Text('Settings page'),
-        ));
+      ),
+    );
   }
 }
